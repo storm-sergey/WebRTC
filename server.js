@@ -2,10 +2,8 @@ const app = require("express")();
 const https = require("https");
 const fs = require("fs");
 const options = {
-  key: fs.readFileSync("./ssl/192.168.0.64-key.pem"),
-  cert: fs.readFileSync("./ssl/192.168.0.64.pem"),
-  //key: fs.readFileSync(process.env.KEY_ADDR || "./ssl/localhost-key.pem"),
-  //cert: fs.readFileSync(process.env.CERT_ADDR || "./ssl/localhost.pem"),
+  key: fs.readFileSync(process.env.KEY_ADDR || "./ssl/192.168.0.66-key.pem"),
+  cert: fs.readFileSync(process.env.CERT_ADDR || "./ssl/192.168.0.66.pem"),
 };
 const server = https.createServer(options, app);
 const io = require("socket.io")(server, {

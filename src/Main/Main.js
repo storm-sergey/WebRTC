@@ -94,12 +94,12 @@ const Main = () => {
       </button>
       <div className={styles.media}>
         <div className={styles.container}>
-          {videoCaption && <p className={`${styles.caption} ${styles.centered}`}>self</p>}
+          {videoCaption && <p className={styles.centered}>self</p>}
           <video ref={selfMedia} muted={true} autoPlay />
         </div>
         <br />
         <div className={styles.container}>
-          {videoCaption && <p className={`${styles.caption} ${styles.centered}`}>remote</p>}
+          {videoCaption && <p className={styles.centered}>remote</p>}
           <video ref={remoteMedia} autoPlay />
         </div>
         <br />

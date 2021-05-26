@@ -1,0 +1,50 @@
+.main {
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ececec;
+  text-align: center;
+}
+
+.header {
+  color: #6666ff;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: #eee;
+  padding: 10px 17px;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.9em;
+  border-radius: 20px 5px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: #777;
+  border: #000;
+  border-style: solid;
+  border-width: 0.1px;
+}
+
+.caption {
+  visibility: visible;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.media {
+  margin: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

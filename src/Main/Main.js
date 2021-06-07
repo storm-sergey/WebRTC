@@ -78,6 +78,7 @@ const Main = () => {
       }
     });
     return () => socket.offAny;
+  // eslint-disable-next-line
   }, [socket, pc]);
 
   useEffect(() => {
